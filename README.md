@@ -5,5 +5,5 @@
 
 2. Разработать Диаграмму компонент комплекса использую нотацию UML 2.0. Общая без деталей.
 
-[](https://github.com/ShumAhd/Software-architecture-4/blob/main/UML%204.Компоненты.png)
+![](https://github.com/ShumAhd/Software-architecture-4/blob/main/UML%204.Компоненты.png)
 
