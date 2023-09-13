@@ -230,9 +230,6 @@ class TicketProvider{
      * @param clientId Идентификатор клиента.
      * @param date     Дата, на которую искать билеты.
      * @return Коллекция найденных билетов.
-     * @pre clientId > 0
-     * @pre date != null
-     * @post result != null
      */
     public Collection<Ticket> searchTicket(int clientId, Date date){
 
@@ -250,9 +247,6 @@ class TicketProvider{
      * @param clientId Идентификатор клиента.
      * @param cardNo   Номер кредитной карты для оплаты.
      * @return true, если покупка прошла успешно, в противном случае - false.
-     * @pre clientId > 0
-     * @pre cardNo != null && !cardNo.isEmpty()
-     * @post result == true || result == false
      */
     public boolean buyTicket(int clientId, String cardNo){
 
@@ -266,8 +260,6 @@ class TicketProvider{
      *
      * @param qrcode QR-код билета.
      * @return true, если билет действителен, в противном случае - false.
-     * @pre qrcode != null && !qrcode.isEmpty()
-     * @post result == true || result == false
      */
     public boolean checkTicket(String qrcode){
         for (Ticket ticket: database.getTickets()) {
